@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="components.css">
+<html>
+	<p>html</p>
+<head>
+	<title>components</title>
+	<div class="container">
+          <ul id="cd-navigation">
+
+      <li><a class=="menu" href="components.html">Components 1</a></li>
+     
+          </ul>
+          </div>
+	<p>Head</p>
+</head>
+<body>
+
+	<p>body</p>
+
+<h1>Typewriter</h1>
+
+<button onclick="typeWriter()">click me</button>
+
+<p id="demo"></p>
+	<p>script starts</p>
+	<script type="text/javascript">
+
+
+
+	var i = 0;
+var txt = 'Typewriter component';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}	
+
+
+
+
+
+	</script>
+
+
+
+</body>
+
+
+	<p>html</p>
+</html>

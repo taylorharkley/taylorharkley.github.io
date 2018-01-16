@@ -1,0 +1,300 @@
+
+/* -------------------------------- 
+
+Home Hero
+
+-------------------------------- */
+
+.home-hero {
+    margin: 0;
+    font-family: 'Raleway';
+    font-weight: normal;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+    height:78vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.fullscreen-video-wrap{
+  z-index: -1;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:78vh;
+  overflow:hidden;
+}
+
+.fullscreen-video-wrap video{
+  min-height:90%;
+  min-width:100%;
+}
+
+.header-overlay{
+  height:78vh;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  z-index:-1;
+  background:rgba(19,20,23, 0.9);
+}
+
+.header-content{
+  align-content: center;
+  z-index:2;
+}
+
+.header-content > h1 {
+  font-size:50px;
+  margin-bottom:0;
+  line-height: 3rem;
+}
+.arc {
+    color: #fff;
+}
+.header-content > h1 > #span-highlight {
+    display: none
+}
+
+.header-content p{
+  font-size:1.5rem;
+  display:block;
+  padding-bottom:3rem;
+}
+
+.header-content > div > .btn{
+  color:#fff;
+  font-size:1.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-style: solid;
+  border-color: #AC966A;
+  transition: 0.35s all ease;
+}
+
+.header-content > div > .btn:hover{
+  background: #AC966A;
+  font-size:1.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #F2F0E8;
+}
+
+#underline-long {
+    margin-left: auto;
+    margin-right: auto;
+    width: 38%;
+    border-bottom: 5px solid #AC966A;
+    margin-bottom: 2rem;
+    margin-top: 2.75rem;
+}
+
+.gear {
+  width: 50px;
+  height: 50px;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  margin-top: -15px;
+  margin-bottom: 25px;
+}
+
+.gear:hover {
+    transform: translateY(150px);
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+/* -------------------------------- 
+
+Analytics
+
+-------------------------------- */
+
+#analytics {
+    height: 200px;
+    background: #262C36;
+    margin: -8px;
+    border-top: 4px solid #AC966A;
+    text-align: center;
+    border-bottom: 4px solid #AC966A;
+    margin-bottom: -1px;
+}
+
+.row {
+    display: inline-block;
+    text-align: center;
+    margin: 100px;
+    margin-top: 20px;
+}
+
+.ct {
+    color: #AC966A;
+}
+
+
+
+/* -------------------------------- 
+
+Location
+
+-------------------------------- */
+
+#colorado-springs-parallax {
+    background:rgba(19,20,23, 0.9);
+    height: 500px;
+    border-bottom: 2px solid #AC966A;
+}
+
+.location-icon {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 7vw;
+}
+
+#colorado-springs-parallax > h1 {
+    display: inline-block;
+    transform: translateY(-80px);
+    margin-left: 2vw;
+    font-family: Raleway;
+    border-bottom: 2px solid #AC966A;
+    width: 20%;
+}
+#colorado-springs-parallax > p {
+    display: inline-block;
+    transform: translateX(-15vw);
+}
+
+.springs-map iframe {
+    outline:6px solid #AC966A;
+    display: inline-block;
+}
+
+.springs-map {
+    display: block;
+    position: absolute;
+    right: -45vw;
+    margin-top: -150px;
+}
+#colorado-springs-parallax iframe {
+    width: 600px;
+    height: 350px;
+}
+.springs-map img {
+    z-index: 1;
+    position: absolute;
+    top: 100px;
+    left: -45px;
+    transform: translateY(-160px)
+}
+
+.location-map-text {
+    width: 40%;
+    margin-left: 10vw;
+    padding-top: 20px;
+    border-top: 3px solid #AC966A;
+    transform: translateY(80px);
+}
+
+.location-map .location-map-btn {
+    text-decoration: none;
+    float: left;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 35px;
+    font-family: 'Raleway';
+    outline: 1px solid #AC966A;
+    padding: 14px;
+    font-weight: 500;  
+    transition: 0.35s all ease;
+}
+
+.location-map-btn {
+    float: left;
+}
+
+.location-map .location-map-btn:hover {
+    background: #2B2F39;
+    color: #fff;
+}
+
+@media only screen and (max-width:1485px) {
+    #colorado-springs-parallax iframe  {
+        width: 400px;
+        height: 235px;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    #colorado-springs-parallax iframe  {
+        width: 350px;
+        height: 205px;
+    }    
+}
+@media only screen and (max-width: 930px) {
+    #colorado-springs-parallax iframe  {
+        display: none;
+    }    
+    #colorado-springs-parallax img {
+        display: none;
+    }
+    .location-map-text {
+        width: 80%;
+        margin-left: 10vw;
+        padding-top: 20px;
+        border-top: 3px solid #AC966A;
+        transform: translateY(80px);
+}
+
+}
+
+/* -------------------------------- 
+
+Mission
+
+-------------------------------- */
+
+#mission {
+    height: 200px;
+    background: #272A2D;
+    border-bottom: 2px solid #AC966A;
+}
+/* -------------------------------- 
+
+Curriculum Overview
+
+-------------------------------- */
+#curriculum-overview {
+    text-align: center;
+    background:rgba(19,20,23, 0.9);
+    height:300px;
+    border-bottom: 2px solid #AC966A;
+}
+
+.location-row {
+    display: inline-block;
+    margin: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-right: 1px solid #AC966A;
+    border-left: 1px solid #AC966A;
+    border-top: 2px solid #AC966Q
+}
+f
+
+
