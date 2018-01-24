@@ -1,19 +1,22 @@
+.data.grid 
 
-/* body, generic */
+{                   }
 
-body {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 500;
-    text-align: justify;
-    text-decoration: none;
-    letter-spacing: 1px;
-    max-width: 100%;
-    max-height: 100%;   
+
+.cd-auto-hide-header.nav-open .nav-trigger em::before {
+  /* rotate top line */
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.cd-auto-hide-header.nav-open .nav-trigger em::after {
+  /* rotate bottom line */
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
-
 /* Non Hover Related NavBar*/
-
 .cd-navigation {
     width: 100%;
     position: absolute;
@@ -32,8 +35,6 @@ body {
   content: '';
   display: table;
   clear: both;
-    
-
 }
 
 
@@ -78,8 +79,6 @@ nav a::before {
 }
 
 nav a:hover::before {
-    
-    
   width: 100%;
     
 
@@ -116,16 +115,4 @@ html {
 
 
 
-
-
-
-
-
-cd-primary-nav {
-    
-    
-    position: fixed;
-    
-    
-}
 

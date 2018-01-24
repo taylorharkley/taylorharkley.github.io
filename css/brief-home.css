@@ -2,18 +2,18 @@
 
 /* body, generic */
 
-body {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 500;
-    text-align: justify;
-    text-decoration: none;
-    letter-spacing: 1px;
-    max-width: 100%;
-    max-height: 100%;   
+.cd-auto-hide-header.nav-open .nav-trigger em::before {
+  /* rotate top line */
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
-
-
-
+.cd-auto-hide-header.nav-open .nav-trigger em::after {
+  /* rotate bottom line */
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
 
 /* Non Hover Related NavBar*/
 .cd-navigation {
@@ -45,7 +45,7 @@ nav ul {
   margin: 0;
   list-style: none;
 }
-/* every item in the navigation bar list has "nav li" traits, for example change the margin to space each one out*/
+/* every item in the navigation bar list has "nav li" traits, for example change the margin to space each unordered list item out*/
 nav li {
   display: inline-block;
   margin-left: 10%;
@@ -91,12 +91,20 @@ nav a:hover::before {
 
 
 
+
+
+
+
+
+
+
 /* bottom layer html color*/
 html {
     
     background-color: #EDEAE5;
     
 }
+
 /* end of html*/
 
 
@@ -116,12 +124,11 @@ html {
 
  .wrapper > div{
           background: grey;
-          padding: none;
+          padding: 1em;
       }
       .wrapper > div:nth-child(odd) { background:#9FEDD7 }
       
       .wrapper {
-          
           display: grid;
          grid-template-columns: 5fr 2fr 3fr; 
           /*grid-template-rows: 1fr 2fr;*/
