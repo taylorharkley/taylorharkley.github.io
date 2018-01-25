@@ -14,6 +14,7 @@ Primary style
 }
 html {
   font-size: 62.5%;
+  background-color: #AC966A;
 }
 
 body {
@@ -285,24 +286,3 @@ Intro Section
 Home Hero
 
 -------------------------------- */
-
-
-#grad1 {
-    height: 1000px;
-    background: grey; /* For browsers that do not support gradients */
-    background: linear-gradient(to bottom right, blue, green); /* Standard syntax (must be last) */
-    opacity: 30%;
-}
-.parallax {
-    /* The image used */
-    background-image: url("download.jpg");
-
-    /* Set a specific height */
-    min-height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
