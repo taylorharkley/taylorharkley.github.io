@@ -50,7 +50,7 @@ Home Hero
 
 .header-content{
   align-content: center;
-  z-index:2;
+  z-index:1;
 }
 
 .header-content > h1 {
@@ -295,6 +295,4 @@ Curriculum Overview
     border-left: 1px solid #AC966A;
     border-top: 2px solid #AC966Q
 }
-f
-
 
