@@ -521,7 +521,9 @@ Twitter feed
         display:none;
     }    
 }
-
+.tl-text {
+    display: none;
+}
 /* -------------------------------- 
 
 Timeline

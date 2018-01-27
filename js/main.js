@@ -129,7 +129,7 @@ if (!demo1.error) {
 } else {
   console.error(demo1.error);
 }
-var demo2 = new CountUp(countUpElement2, 0, 2015, 0, 2.7, options);
+var demo2 = new CountUp(countUpElement2, 0, 2014, 0, 2.7, options);
 if (!demo2.error) {
   demo2.start();
 } else {
