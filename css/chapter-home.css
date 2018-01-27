@@ -530,18 +530,11 @@ Timeline
 #timeline {
     background: #E4E4E4;
 }
-#timeline > h1 {
-    font-size:25pt;
-    color:#2F3234;
-    text-align:center;
-    border-bottom:4px solid #AC966A;
-    margin-left:20px;
-    margin-right:20px;
-    padding-top:10px;
-}
+
 #timeline > iframe {
     margin-left:10vw;
     margin-top:30px;
     margin-bottom:30px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .28)
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .28);
+    border-top: 2px solid #4CBDFB;
 }
