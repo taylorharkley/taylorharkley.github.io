@@ -64,30 +64,27 @@ a {
     transform: translateY(-110px);
     
 }
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 1275px) {
   .cd-auto-hide-header {
     height: 85px;
   }
 }
 
+.cd-auto-hide-header .logo a, .cd-auto-hide-header .logo img {
+  display: block;
+  content: url(/img/logos/logo-shrunken.png);
+  margin-top:50px;
+}
+
 
 .cd-auto-hide-header .logo,
 .cd-auto-hide-header .nav-trigger {
-  transition: 0.45s all ease;
   position: absolute;
   top: 50%;
   bottom: auto;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-}
-
-.cd-auto-hide-header .logo {
-  left: 5%;
-  transform: translateY(-74px);
-}
-.cd-auto-hide-header .logo a, .cd-auto-hide-header .logo img {
-  display: block;
 }
 
 .cd-auto-hide-header .nav-trigger {
@@ -132,6 +129,7 @@ a {
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
 }
+
 .cd-auto-hide-header .nav-trigger em::before {
   /* this is the menu icon top line */
   -webkit-transform: translateY(-6px);
@@ -144,10 +142,20 @@ a {
       -ms-transform: translateY(6px);
           transform: translateY(6px);
 }
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 1275px) {
   .cd-auto-hide-header .nav-trigger {
     display: none;
   }
+
+.cd-auto-hide-header .logo {
+  left: 5%;
+  transform: translateY(-74px);
+}
+  
+.cd-auto-hide-header .logo a, .cd-auto-hide-header .logo img {
+  display: block;
+}
+
 }
 
 .cd-auto-hide-header.nav-open .nav-trigger em {
@@ -174,50 +182,51 @@ a {
   padding-right: 5%;
 }
 
-.minified  {
-    transition: 0.5s all ease;
-    z-index: 50;
-    background: #2B2F39;
-    border-bottom: 2px solid #AC966A;
-}
-
-.minified .logo {
-    margin-top: -10px;
-    transition: 0.75s all ease;
-    content:url(/img/logos/logo-shrunken.png);
-}
-
-.minified .cd-primary-nav > ul {
-  transition: 0.5s all ease;
-  transform: translateY(-10px);
+.cd-primary-nav > ul {
+  position: absolute;
+  z-index: 2;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #2B2F39;
+  display: none;
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.2);
 }
 .cd-primary-nav > ul a {
   /* target primary-nav links */
   display: block;
   height: 50px;
   line-height: 50px;
+  padding-left: 5%;
   color: #fff;
   font-size: 1.8rem;
-  border-top: 1px solid #f2f2f2;
-  font-family: Raleway;
-
 }
 
-.cd-primary-nav > ul > li {
-    transition: 0.5s all ease;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 5px;
-    transform: translateY(15px);
-}
+
 .cd-primary-nav > ul a:hover, .cd-primary-nav > ul a.active {
   color: #AC966A;
 }
-@media only screen and (min-width: 1150px) {
-  .cd-primary-nav {
+
+@media only screen and (min-width: 1275px) {
+    .cd-auto-hide-header .logo {
+        transform: translateY(-100px);
+    }
+    .cd-primary-nav {
     /* vertically align its content */
     display: table;
+      z-index: 20;
   }
+.cd-primary-nav > ul {
+  transform:translateY(0px);
+}
+.cd-primary-nav > ul > li {
+  padding: 15px;
+}
+
+.cd-auto-hide-header .logo a, .cd-auto-hide-header .logo img {
+  display: block;
+  content: url(/img/logos/logo.png);
+}
   .cd-primary-nav > ul {
     /* vertically align inside parent element */
     display: table-cell;
@@ -232,7 +241,6 @@ a {
   }
   .cd-primary-nav > ul::after {
     clear: both;
-    content: "";
     display: block;
   }
   .cd-primary-nav > ul li {
@@ -264,25 +272,71 @@ nav ul li a:before {
   */
   display: block;
 }
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 1275px) {
   .nav-open .cd-primary-nav ul,
   .cd-primary-nav ul:target {
     display: table-cell;
   }
 }
 
+.minified  {
+    transition: 0.5s all ease;
+    z-index: 50;
+    background: #2B2F39;
+    border-bottom: 2px solid #AC966A;
+}
 
+.minified .logo {
+    margin-top: 10px;
+    transform:scale(0.8);
+    margin-top:-130px;
+
+}
 
 /* -------------------------------- 
 
-Intro Section
+Timeline
 
 -------------------------------- */
+#cd-timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#cd-timeline::before {
+  /* this is the vertical line */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: #d7e4ed;
+}
 
+/* Animation Portion */
 
-
-/* -------------------------------- 
-
-Home Hero
-
--------------------------------- */
+.cssanimations .cd-timeline-img.is-hidden {
+  visibility: hidden;
+}
+.cssanimations .cd-timeline-img.bounce-in {
+  visibility: visible;
+  animation: cd-bounce-1 0.6s;
+}
+ 
+@keyframes cd-bounce-1 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+ 
+  60% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+ 
+  100% {
+    transform: scale(1);
+  }
+}

@@ -50,7 +50,7 @@ Home Hero
 
 .header-content{
   align-content: center;
-  z-index:2;
+  z-index:1;
 }
 
 .header-content > h1 {
@@ -69,6 +69,8 @@ Home Hero
   font-size:1.5rem;
   display:block;
   padding-bottom:3rem;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 .header-content > div > .btn{
@@ -121,6 +123,16 @@ Home Hero
         transform:rotate(360deg);
     }
 }
+@media only screen and (max-width: 450px) {
+    .header-content > h1 {
+        font-size: 25pt;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .header-content > h1 {
+        font-size: 20pt;
+    }
+}
 /* -------------------------------- 
 
 Analytics
@@ -140,7 +152,7 @@ Analytics
 .row {
     display: inline-block;
     text-align: center;
-    margin: 100px;
+    margin: 5vw;
     margin-top: 20px;
 }
 
@@ -148,8 +160,24 @@ Analytics
     color: #AC966A;
 }
 
-
-
+@media only screen and (max-width: 1000px) {
+    .row {
+        margin:2vw;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .analytics-subtitle {
+       font-size:14pt; 
+    }  
+}
+@media only screen and (max-width: 585px) {
+    .disappear {
+       display: none; 
+    }  
+    .row {
+        margin-top:25px;
+    }
+}
 /* -------------------------------- 
 
 Location
@@ -259,10 +287,13 @@ Location
         padding-top: 20px;
         border-top: 3px solid #AC966A;
         transform: translateY(80px);
+    }
 }
-
+@media only screen and (max-width:385px) {
+    .location-map-text > p {
+        display: none;
+    }
 }
-
 /* -------------------------------- 
 
 Mission
@@ -295,6 +326,4 @@ Curriculum Overview
     border-left: 1px solid #AC966A;
     border-top: 2px solid #AC966Q
 }
-f
-
 

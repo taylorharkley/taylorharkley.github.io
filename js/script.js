@@ -1,6 +1,5 @@
 
 
-
 var siteW = $(window).width();
 var siteH = $(window).height();
 

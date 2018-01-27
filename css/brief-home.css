@@ -81,6 +81,7 @@ nav a:hover::before {
   width: 100%;
     
 
+<<<<<<< HEAD
 }
 
 /*end of nav a hover effect*/
@@ -137,3 +138,14 @@ html {
           
       }
 /* END OF CSS GRID wrapper class */
+
+/* make generic class */
+html {margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;}
+=======
+}
+>>>>>>> 04e6cd48a51888fe0213926887a376603c7fbbdc

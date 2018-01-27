@@ -1,3 +1,5 @@
+// Navigation
+
 var nav = document.querySelector('.cd-auto-hide-header');
 var position = 0;
 
@@ -29,6 +31,7 @@ jQuery(document).ready(function($){
 		// open primary navigation on mobile
 		event.preventDefault();
 		mainHeader.toggleClass('nav-open');
+        nav.classList += (" minified");
 	});
 
 	$(window).on('scroll', function(){
