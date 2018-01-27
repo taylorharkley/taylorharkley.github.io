@@ -1,91 +1,98 @@
-
+<!doctype html>
 <html lang="en">
 <head>
-    <script src="timelinetsa.js"> </script>
-    <script src="jquery-2.1.1.js"> </script>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
-   
-	<link rel="stylesheet" href="css/chapter-history.css"> <!-- CSS reset + Resource style -->
-	<script src="/js/jquery-2.1.1.js"></script>
-    <script src="/js/timelinetsa.js"></script>
-    <!-- Modernizr -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=David+Libre|Hind:400,700" rel="stylesheet">
+<link rel="stylesheet" href="/css/chapter-styles.css">
+<link rel="stylesheet" href="/css/chapter-history.css">
+ 	<link rel="stylesheet" href="/css/chapter-home.css">  
+ 	<link rel="stylesheet" href="/css/libraries/hover-min.css">   
+    <link rel="stylesheet" href="/css/libraries/fa-svg-with-js.css">
+    <link rel="stylesheet" href="/css/libraries/animate.min.css">    
+<title>Doherty High School | Career-Technical Education Program</title>
+</head>    
     
-    
-    
-    
-  	
-	<title>TSA Chapter</title>
-</head>
 <body>
-	<nav id="cd-vertical-nav">
-		<ul>
-			<li>
-				<a href="#section1" data-number="1">
-					<span class="cd-dot"></span>
-					<span class="cd-label">Intro</span>
-				</a>
-			</li>
-			<li>
-				<a href="#section2" data-number="2">
-					<span class="cd-dot"></span>
-					<span class="cd-label">About</span>
-				</a>
-			</li>
-			<li>
-				<a href="#section3" data-number="3">
-					<span class="cd-dot"></span>
-					<span class="cd-label">Features</span>
-				</a>
-			</li>
-			<li>
-				<a href="#section4" data-number="4">
-					<span class="cd-dot"></span>
-					<span class="cd-label">Portfolio</span>
-				</a>
-			</li>
-			<li>
-				<a href="#section5" data-number="5">
-					<span class="cd-dot"></span>
-					<span class="cd-label">Pricing</span>
-				</a>
-			</li>
-			<li>
-				<a href="#section6" data-number="6">
-					<span class="cd-dot"></span>
-					<span class="cd-label">Contact</span>
-				</a>
-			</li>
-		</ul>
-	</nav>
-	<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+    
+    
+<header class="cd-auto-hide-header" data-threshold="80">
+            <div class="logo"><a href="index.html"><img src="/img/logos/logo.png" alt="Logo" class="hvr-shrink"></a></div>
 
-	<section id="section1" class="cd-section">
-		<h1>Vertical Fixed Navigation</h1>
-		<a href="#section2" class="cd-scroll-down cd-img-replace">scroll down</a>
-	</section><!-- cd-section -->
+            <nav class="cd-primary-nav">
+                <a href="#cd-navigation" class="nav-trigger">
+                    <span>
+                        <em aria-hidden="true"></em>
+                        Menu
+                    </span>
+                </a> <!-- .nav-trigger -->
 
-	<section id="section2" class="cd-section">
-		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
-	</section><!-- cd-section -->
+                <ul id="cd-navigation">
+                    <li class="menu hvr-underline-from-center" id="current"><a href="index-history.html">Chapter History</a></li>
+                    <li class="menu hvr-underline-from-center" id="current"><a href="index.html">Competitive Activities</a></li>
+                    <li class="menu hvr-underline-from-center" id="current"><a href="index.html">Projects</a></li>
+                    <li><a class="menu hvr-underline-from-center" href="#0">Our Curriculum</a></li>
+                    <li><a class="menu hvr-underline-from-center" href="#0">Program Staff</a></li>
+                    <li><a class="hvr-underline-from-center" href="design-brief-home.html">Design Brief</a></li>
+                    <!-- What was deleted and replaced in brief link "design.html hvr-underline_from_center" -->
 
-	<section id="section3" class="cd-section">
-		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
-	</section><!-- cd-section -->
+                </ul>
+            </nav>
+        </header> 
+    <div class="home-hero">
+            <div class="fullscreen-video-wrap">
+                <video autoplay="" loop="" type="video/mp4">
+                    <source src="/img/banners/home-hero.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="header-overlay"></div>
+            <div id="header-content" class="header-content">
+              <h1 class="animated fadeInDown arc"> DHS TSA Timeline <span id="span-highlight">TSA</span></h1>
+              <div class="animated fadeInLeft" id="underline-long"></div>
+              <p class="animated fadeInUp">Delve deep into an overview of Doherty High School's renowned Career and Technical Education Program, featuring the Technology Student Association and its various subset programs.</p>
+            </div>
+        </div>
+    
+    
+    
+    <!-- Timeline Starts, labeled "section" -->
+    <!-- Script For timeline -->
+    <script>
+    
+    $(window).on('scroll', function(){
+	$timeline_block.each(function(){
+		if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+			$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+		}
+	});
+});
 
-	<section id="section4" class="cd-section">
-		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
-	</section><!-- cd-section -->
-
-	<section id="section5" class="cd-section">
-		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
-	</section><!-- cd-section -->
-
-	<section id="section6" class="cd-section">
-		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
-	</section><!-- cd-section -->
-
+    
+    
+    </script>
+    <section id="cd-timeline">
+	<div class="cd-timeline-block">
+		<div class="cd-timeline-img">
+			<img src="img/cd-icon-picture.svg" alt="Picture">
+		</div> <!-- cd-timeline-img -->
+ 
+		<div class="cd-timeline-content">
+			<h2>Founded in 2012</h2>
+			<p>Jeff Neumeyer had a dream to lighten the hearts of tech loving kids at Doherty High. He asked the principal for money and Sir Gardener said yes.</p>
+			<a href="#0" class="cd-read-more">Read more</a>
+			<span class="cd-date">Jan 14 2012</span>
+		</div> <!-- cd-timeline-content -->
+	</div> <!-- cd-timeline-block -->
+ 
+	<div class="cd-timeline-block">
+		<!-- ... -->
+	</div>
+</section>
+    
+    <!-- Timeline Ends, labeled "section" -->
+    
+    
+    
+    
+    
 </body>
-</html>
