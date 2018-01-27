@@ -222,7 +222,7 @@ Location
 }
 #colorado-springs-parallax iframe {
     width: 600px;
-    height: 350px;
+    height: 280px;
 }
 .springs-map img {
     z-index: 1;
@@ -303,7 +303,6 @@ Curriculum Overview
 #curriculum-overview {
     text-align: center;
     background:rgba(19,20,23, 0.9);
-    height:300px;
     border-bottom: 2px solid #AC966A;
 }
 
@@ -343,11 +342,6 @@ Twitter feed
   border-top-right-radius: 8px; 
 }
 
-@media only screen and max-width:(1135px) {
-    #d11-twitter {
-        display: none;
-    }
-}
 
 .container-twitter {
   width: 320px;
@@ -358,7 +352,7 @@ Twitter feed
   -o-border-radius: 8px;
   border-radius: 8px;
   padding-bottom: 1.5em;
-  background-color: #dde1e2;
+  background-color: #fff;
   -webkit-box-shadow: #bdc3c7 0 5px 5px;
   -moz-box-shadow: #bdc3c7 0 5px 5px;
   box-shadow: #bdc3c7 0 5px 5px;
@@ -515,4 +509,39 @@ Twitter feed
   .follow:hover {
     background-color: #167abd;
     cursor: pointer; }
+@media only screen and (max-width:1135px) {
+    #d11-twitter {
+        transition:0.35s all ease;
+        display:none;
+    }    
+}
+@media only screen and (max-width:800px) {
+    #doherty-twitter {
+        transition:0.35s all ease;
+        display:none;
+    }    
+}
 
+/* -------------------------------- 
+
+Timeline
+
+-------------------------------- */
+#timeline {
+    background: #E4E4E4;
+}
+#timeline > h1 {
+    font-size:25pt;
+    color:#2F3234;
+    text-align:center;
+    border-bottom:4px solid #AC966A;
+    margin-left:20px;
+    margin-right:20px;
+    padding-top:10px;
+}
+#timeline > iframe {
+    margin-left:10vw;
+    margin-top:30px;
+    margin-bottom:30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .28)
+}
