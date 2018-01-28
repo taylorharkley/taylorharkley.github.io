@@ -1,3 +1,7 @@
+# @media screen and (-webkit-min-device-pixel-ratio:0)
+{
+.header-overlay, #colorado-springs-parallax, #curriculum-overview, .desc, #timeline > iframe, #team-home, .teamimg, #competitive-activities { background:rgba(19,20,23, 0.9);}
+}
 
 /* -------------------------------- 
 
