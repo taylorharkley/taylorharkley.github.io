@@ -187,7 +187,7 @@ Location
 #colorado-springs-parallax {
     background:rgba(19,20,23, 0.9);
     height: 500px;
-    border-bottom: 2px solid #C3C1BF;;
+    border-bottom: 2px solid #C3C1BF;
 }
 
 .location-icon {
@@ -201,7 +201,7 @@ Location
     transform: translateY(-80px);
     margin-left: 2vw;
     font-family: Raleway;
-    border-bottom: 2px solid #C3C1BF;;
+    border-bottom: 2px solid #C3C1BF;
     width: 20%;
 }
 #colorado-springs-parallax > p {
@@ -236,7 +236,7 @@ Location
     width: 40%;
     margin-left: 10vw;
     padding-top: 20px;
-    border-top: 2px solid #C3C1BF;;
+    border-top: 3px solid #8EAEBD;
     transform: translateY(80px);
 }
 
@@ -701,14 +701,14 @@ Competitive Activities
 #competitive-activities{
     background:rgba(19,20,23, 0.9);
     height: 550px;
-    border-bottom: 2px solid #C3C1BF;;
+    border-bottom: 2px solid #8EAEBD;
 }
 .activities-text {
     float:right;
     width: 40%;
     margin-right: 10vw;
     margin-top: 130px;
-    border-top: 2px solid #C3C1BF;;
+    border-top: 3px solid #8EAEBD;
     
 }
 .activities-map .activities-map-btn {
