@@ -1,7 +1,3 @@
-# @media screen and (-webkit-min-device-pixel-ratio:0)
-{
-.header-overlay, #colorado-springs-parallax, #curriculum-overview, .desc, #timeline > iframe, #team-home, .teamimg, #competitive-activities { background:rgba(19,20,23, 0.9);}
-}
 
 /* -------------------------------- 
 
@@ -83,12 +79,12 @@ Home Hero
   padding: 1rem 2rem;
   text-decoration: none;
   border-style: solid;
-  border-color: #AC966A;
+  border-color: #8EAEBD;
   transition: 0.35s all ease;
 }
 
 .header-content > div > .btn:hover{
-  background: #AC966A;
+  background: #8EAEBD;
   font-size:1.2rem;
   padding: 1rem 2rem;
   text-decoration: none;
@@ -99,7 +95,7 @@ Home Hero
     margin-left: auto;
     margin-right: auto;
     width: 38%;
-    border-bottom: 5px solid #AC966A;
+    border-bottom: 5px solid #8EAEBD;
     margin-bottom: 2rem;
     margin-top: 2.75rem;
 }
@@ -147,9 +143,9 @@ Analytics
     height: 200px;
     background: #262C36;
     margin: -8px;
-    border-top: 4px solid #AC966A;
+    border-top: 4px solid #C3C1BF;
     text-align: center;
-    border-bottom: 4px solid #AC966A;
+    border-bottom: 4px solid #C3C1BF;
     margin-bottom: -1px;
 }
 
@@ -161,7 +157,7 @@ Analytics
 }
 
 .ct {
-    color: #AC966A;
+    color: #8EAEBD;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -191,7 +187,7 @@ Location
 #colorado-springs-parallax {
     background:rgba(19,20,23, 0.9);
     height: 500px;
-    border-bottom: 2px solid #AC966A;
+    border-bottom: 2px solid #C3C1BF;;
 }
 
 .location-icon {
@@ -205,7 +201,7 @@ Location
     transform: translateY(-80px);
     margin-left: 2vw;
     font-family: Raleway;
-    border-bottom: 2px solid #AC966A;
+    border-bottom: 2px solid #C3C1BF;;
     width: 20%;
 }
 #colorado-springs-parallax > p {
@@ -214,7 +210,7 @@ Location
 }
 
 .springs-map iframe {
-    outline:6px solid #AC966A;
+    outline:6px solid #8EAEBD;
     display: inline-block;
 }
 
@@ -240,7 +236,7 @@ Location
     width: 40%;
     margin-left: 10vw;
     padding-top: 20px;
-    border-top: 3px solid #AC966A;
+    border-top: 2px solid #C3C1BF;;
     transform: translateY(80px);
 }
 
@@ -251,7 +247,7 @@ Location
     text-transform: uppercase;
     margin-top: 35px;
     font-family: 'Raleway';
-    outline: 1px solid #AC966A;
+    outline: 1px solid #8EAEBD;
     padding: 14px;
     font-weight: 500;  
     transition: 0.35s all ease;
@@ -289,7 +285,7 @@ Location
         width: 80%;
         margin-left: 10vw;
         padding-top: 20px;
-        border-top: 3px solid #AC966A;
+        border-top: 2px solid #C3C1BF;;
         transform: translateY(80px);
     }
 }
@@ -307,7 +303,7 @@ Curriculum Overview
 #curriculum-overview {
     text-align: center;
     background:rgba(19,20,23, 0.9);
-    border-bottom: 2px solid #AC966A;
+    border-bottom: 2px solid #C3C1BF;
 }
 
 .location-row {
@@ -315,8 +311,8 @@ Curriculum Overview
     margin: 20px;
     padding-left: 100px;
     padding-right: 100px;
-    border-right: 1px solid #AC966A;
-    border-left: 1px solid #AC966A;
+    border-right: 1px solid #8EAEBD;
+    border-left: 1px solid #8EAEBD;
     border-top: 2px solid #AC966Q
 }
 
@@ -327,7 +323,7 @@ Twitter feed
 -------------------------------- */
 #twitter-feed {
     background: #272A2D;
-    border-bottom: 2px solid #AC966A;
+    border-bottom: 2px solid #C3C1BF;;
     padding:50px;
 }
 #twitter-containers {
@@ -557,8 +553,8 @@ Team
     font-weight: 200;
     height: 610px;
      background:rgba(19,20,23, 0.8);
-    border-top: 2px solid #AC966A;
-    border-bottom: 2px solid #AC966A;
+    border-top: 2px solid #C3C1BF;
+    border-bottom: 2px solid #C3C1BF;;
 }
 @media only screen and (max-width:1215px) {
     #aker-2 {
@@ -628,7 +624,6 @@ Team
 
 .facebook-team
 {
-    float: left;
     width: 48px;
     height: 48px;
     color: #D1CFCF;
@@ -639,7 +634,6 @@ Team
 
 .twitter-team
 {
-    float: left;
     width: 48px;
     height: 48px;
     color: #D1CFCF;
@@ -650,7 +644,6 @@ Team
 
 .google-team
 {
-    float: left;
     width: 48px;
     height: 48px;
     color: #D1CFCF;
@@ -661,7 +654,6 @@ Team
 
 .pinterest-team
 {
-    float: left;
     width: 48px;
     height: 48px;
     color: #D1CFCF;
@@ -691,7 +683,7 @@ Team
 }
 a.btn-standard {
     color: #fff;
-    outline: 1px solid #AC966A;
+    outline: 1px solid #8EAEBD;
     padding: 12px;
     font-size: 12pt;
     text-transform: uppercase;
@@ -709,14 +701,14 @@ Competitive Activities
 #competitive-activities{
     background:rgba(19,20,23, 0.9);
     height: 550px;
-    border-bottom: 2px solid #AC966A;
+    border-bottom: 2px solid #C3C1BF;;
 }
 .activities-text {
     float:right;
     width: 40%;
     margin-right: 10vw;
     margin-top: 130px;
-    border-top: 3px solid #AC966A;
+    border-top: 2px solid #C3C1BF;;
     
 }
 .activities-map .activities-map-btn {
@@ -726,7 +718,7 @@ Competitive Activities
     text-transform: uppercase;
     margin-top: 35px;
     font-family: 'Raleway';
-    outline: 1px solid #AC966A;
+    outline: 1px solid #8EAEBD;
     padding: 14px;
     font-weight: 500;  
     transition: 0.35s all ease;
@@ -777,7 +769,7 @@ Competitive Activities
   width: 100%;
   height: 340px;
   background-color: #141414;
-  outline: 1px solid #AC966A;
+  outline: 1px solid #8EAEBD;
 }
 .slick-codepen .slick-slide {
   height: 340px !important;
@@ -818,11 +810,11 @@ Competitive Activities
   width: 22%;
   left: 40%;
   bottom: -68px;
-  border-bottom: 1px solid #AC966A;
+  border-bottom: 1px solid #8EAEBD;
   padding: 15px 0;
 }
 .slick-codepen .slick-dots li.slick-active button:before {
-  color: #AC966A;
+  color: #8EAEBD;
   margin-top: 1px;
   font-size: 10px;
 }
@@ -908,7 +900,7 @@ footer .bottom-bar {
   text-transform: uppercase;
   background: #121518;
   padding: 15px 0;
-  border-top: 1px solid #AC966A;
+  border-top: 1px solid #C3C1BF;
 }
 
 /* Responsive Tablet Sizes */
@@ -1029,7 +1021,7 @@ footer a {
   transition: color .5s, background .5s;
 }
 footer a:hover {
-  color: #AC966A;
+  color: #8EAEBD;
 }
 .footer-contact a {
   text-transform: none;
@@ -1081,3 +1073,9 @@ footer a:hover {
         content: url("/img/logos/minature-logo.png");
     }
 }
+
+/* -------------------------------- 
+
+Creed
+
+-------------------------------- */

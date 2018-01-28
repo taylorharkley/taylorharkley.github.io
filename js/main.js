@@ -262,3 +262,13 @@ $('.slick-next').on('mouseenter', function(){
 $('.slick-next').on('mouseleave', function() {
   window.clearInterval(nextSlideInterval);
 });
+
+// Smooth-Scroll Button
+
+$(function(){
+    $("#scroll").click(function(e){
+        e.preventDefault();
+        $path=$("#colorado-springs-parallax").offset().top;
+        $('body,html').animate({scrollTop:$path},1500);
+    });
+});
