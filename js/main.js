@@ -272,3 +272,6 @@ $(function(){
         $('body,html').animate({scrollTop:$path},1500);
     });
 });
+
+// Home Screen Vector Animation
+
